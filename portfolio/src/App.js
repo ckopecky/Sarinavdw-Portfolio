@@ -1,9 +1,12 @@
 import React from 'react';
 import './index.css';
+import DesignSystem from "./assets/designSystem";
+
 
 function App() {
   return (
-    <div>
+    <div className="App">
+      <DesignSystem />
     </div>
   );
 }

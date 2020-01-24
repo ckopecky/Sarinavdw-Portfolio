@@ -1,13 +1,193 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html {
+  font-size: 62.5%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --brightpink: #f8827d;
+  --carnation: #f6615a;
+  --rosequartz: #ecbcba;
+  --peach: #f2d7c3;
+  --tundora: #424242;
+  --bud: #9ea29d;
+  --alto: #dcdad9;
+  --denim: #0f82d3;
+  --bluechalk: #F2DAFD;
+  --desertsand: #f2d7c3;
+  --petiteorchid: #E39E9B;
+  --astral: #3C7AA6;
+  --notoserif: "Noto Serif", serif;
+  --notosans: "Noto Sans", sans-serif;
+  --border: 1px solid #424242;
+  --h1-size: 6.4rem;
+  --h2-size: 4.8rem;
+  --h3-size: 3.6rem;
+  --h4-size: 2.4rem;
+  --p-size: 1.6rem;
 }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+
+/* design system example */
+
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.box {
+  margin: 20px;
+  border: var(--border);
+  height: 200px;
+  width: 200px;
+}
+
+#brightpink {
+  background-color: var(--brightpink);
+}
+
+#rosequartz {
+  background-color: var(--rosequartz);
+}
+
+#peach {
+  background-color: var(--peach);
+}
+
+#tundora {
+  background-color: var(--tundora);
+}
+
+#alto {
+  background-color: var(--alto);
+}
+
+#bud {
+  background-color: var(--bud);
+}
+
+#denim {
+  background-color: var(--denim);
+}
+
+#bluechalk {
+  background-color: var(--bluechalk);
+}
+
+#desertsand {
+  background-color: var(--desertsand);
+}
+
+#petiteorchid {
+  background-color: var(--petiteorchid);
+}
+
+#astral {
+  background-color: var(--astral);
+}
+
+.six-opacity {
+  opacity: .65;
+}
+
+.four-opacity {
+  opacity: .4;
+}
+
+.two-opacity {
+  opacity: .2;
+}
+
+.none {
+  border: none;
+}
+
+/* text style */
+
+h1 {
+  font-size: var(--h1-size);
+}
+
+h2 {
+  font-size: var(--h2-size);
+}
+
+h3 {
+  font-size: var(--h3-size);
+}
+
+h4 {
+  font-size: var(--h4-size);
+}
+
+p {
+  font-size: var(--p-size);
+}
+
+.btn {
+  background-color: var(--carnation);
+  color: #FFF;
+  border-radius: 24px;
+  font-size: var(--p-size);
+  height: 48px;
+  width: 16.3rem;
+}
+
+.sans {
+  font-family: var(--notosans);
+}
+
+
